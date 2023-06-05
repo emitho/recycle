@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Emil Thorsplass">
+    <meta description="Book an unforgettable bike tour in Stavanger today. Solo or in a group – it doesn't matter. Experience the city in an efficient and breath-taking way.">
+    <link rel="stylesheet" href="style.css">
+    <title>Book a Bycicle Tour in Stavanger | Re-Cycle</title>
+</head>
+<body>
+    <main role="main">
+        <header class="site-banner" role="banner">
+                <div class="site-banner__header-text"> 
+                    <p>Re-Cycle</p> 
+                </div>
+                <div class="site-banner__tagline">
+                    <p>Sustainable Scenic Tours of Stavanger<p>
+                </div>
+            </header>
+            <div class="navigation-wrapper sticky">
+                <nav class="site-banner__navigation">
+                    <ul>
+                        <a href="index.html"><li class="site-banner__navigation-button --home">Home</li></a>
+                        <a href="tours.html"> <li class="site-banner__navigation-button --tour --selected">Tours</li> </a><!--Try to make a hamburger menu within tours-->
+                        <a href="about.html"> <li class="site-banner__navigation-button --about">About</li></a>
+                        <a href="contact.html"> <li class="site-banner__navigation-button --contact">Contact</li></a>
+                    </ul>
+                </nav>
+            </div>
+        <div class="tour-sections">
+            <h1>All Bike Tours in Stavanger</h1>
+            <hr class="always-display">
+            <section class="tour-section --våland">
+                <h2>Våland</h2>
+                <div class="tour-section__image-wrapper">
+                    <img class="tour-section__image --våland" src="images/photos/tour-section_image--våland.jpg" alt="Woman cycling through a long path with threes on both sides during a lovely sunset.">
+                </div>
+                <ul class="tour-section__presentation">
+                    <li> Take a trip throught the hills and woods in Våland</li>
+                    <li> Great scenery of the city from the tower of Våland</li>
+                    <li> Best combination of suburb and nature </li>
+                    <li> Good option for families </li>
+                </ul>
+                <ul class="tour-section__info">
+                    <li> 1100,- NOK per person</li>
+                    <li> 1 hour duration</li>
+                    <li> Good for up to 4 people </li>
+                    <li> 10% off per extra person in groups of 2+</li>
+                </ul>
+                <a href="#tour-form"><div class="tour-section__button"><span>book now</span></div></a>
+            </section>
+
+            <section class="tour-section --madla">
+                <hr class="hide">
+                <h2>Tjensvoll & Madla</h2>
+                <div class="tour-section__image-wrapper">
+                    <img class="tour-section__image --madla" src="images/photos/tour-section_image--madla.jpg" alt="Green bicycle standing by a three with beautiful farmland and mountains in the background.">
+                </div>
+                <ul class="tour-section__presentation">
+                    <li> Longer trip through stunning scenery and suburbia</li>
+                    <li> See legendary sites like Three Swords in Rock</li>
+                    <li> A refreshing part will go alongside the ocean</li>
+                    <li> Most popular option for couples</li>
+                </ul>
+                <ul class="tour-section__info">
+                    <li> 1500,- NOK per person</li>
+                    <li> 2 hour duration</li>
+                    <li> Good for up to 6 people </li>
+                    <li> 10% off per extra person in groups of 3+</li>
+                </ul>
+                <a href="#tour-form"><div class="tour-section__button"><span>book now</span></div></a>
+            </section>
+
+            <section class="tour-section --sola">
+                <hr class="hide">
+                <h2>Sola Beach & Tananger</h2>
+                <div class="tour-section__image-wrapper">
+                    <img class="tour-section__image --sola" src="images/photos/tour-section_image--sola.jpg" alt="Two sporty women cycling on a road laying by the beach.">
+                </div>
+                <ul class="tour-section__presentation">
+                    <li> Longest trip by stunning beaches</li>
+                    <li> Long stretches of beautiful farmland scenery</li>
+                    <li> Can be extended from 3.5 to 4 hours through Randaberg</li>
+                    <li> Highest value for groups of adults</li>
+                </ul>
+                <ul class="tour-section__info">
+                    <li> 2500 - 3000,- NOK per person</li>
+                    <li> 3.5 - 4 hour duration</li>
+                    <li> Good for up to 12 people </li>
+                    <li> 10% off per extra person in groups of 5+</li>
+                </ul>
+                <a id="tour-form" href="#tour-form"><div class="tour-section__button"><span>book now</span></div></a> <!--id="tour-form placed here to componsate for the space sticky takes up when clicking a "book now" button-->
+            </section>                  
+        </div>
+        <div class="container tour-form">
+            <div class="wrapper">
+                <div class="contact">
+                    <h3>Book a tour</h3>
+                    <form class="form-inline" action="/tours.html">
+                        <p class="full">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" placeholder="Your name" name="name">
+                        </p>
+                        <p class="full">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" placeholder="Email address" name="email" required>
+                        </p>
+                        <p class="full">
+                        <label for="tour">Tour:</label>
+                            <select id="tour" name="tour" required>
+                                <option value="" disabled selected hidden>Select tour</option>
+                                <option value="våland">Våland - 1hr</option>
+                                <option value="madla">Tjensvoll - 2hr</option>
+                                <option value="sola">Sola Beach - 3.5hr</option>
+                                <option value="sola_randaberg">Sola Beach - 4hr</option>
+                            </select>
+                        </p>
+                        <p class="full">
+                            <button class="tour-form__button" type="submit">SEND BOOKING REQUEST</button>
+                        </p>
+                    </form> 
+                </div>
+            </div> 
+        </div>
+    </main>
+    <footer class="main-footer" role="content-info">
+        <div class="main-footer__icons">
+            <img class="main-footer__icon --facebook" src="images/graphics/facebook.png">
+            <img class="main-footer__icon --instagram" src="images/graphics/instagram.png">
+        </div>
+        <div class="main-footer__navigation">
+            <p class="main-footer__navigation-button --jump"><a href="#top">Jump back up</a></p>
+            <p class="main-footer__navigation-button"><a href="tours.html">See all tours</a></p>
+            <p class="main-footer__navigation-button"><a href="about.html">About us</a></p>
+            <p class="main-footer__navigation-button"><a href="contact.html">Questions &amp; issues</a></p>
+        </div>
+        <div class="main-footer__menu">
+            <p class="main-footer__menu-item --bold">Visit us on weekdays:</p>
+            <p class="main-footer__menu-item">Prestegadå 82, 4020 Stavanger</p>
+            <p class="main-footer__menu-item --bold">Send us an email:</p>
+            <p class="main-footer__menu-item"><a class="mail" href="mailto:re@cycle.com">re@cycle.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
