@@ -2,19 +2,15 @@
 
 ![image](images/photos/Screen%20Shot%202023-06-05%20at%2012.15.17.png)
 
-Web site for a Community Science Museum. Playful yet futuristic feel. Scales beautifully down to mobile.
-
+Booking site for scenic bicycle tours in the Norwegian city of Stavanger.
 
 ## Description
 
-A mobile-first informational web site for a science museum. The design and color palette is futuristic and tech focused.
+A booking site for Bicycle tours. 
 
 Notable features: 
 
-- Fun hover effects on desktop.
-- Clean, dark futuristic design.
-- Dynamic hamburger menu button coded with CSS only.
-- No flexbox used.
+- Lines up informational sections on Tour Page well with traditional use of block elements - no flexbox
 
 
 ## Built With
